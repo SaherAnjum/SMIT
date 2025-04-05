@@ -1,0 +1,221 @@
+/* Theme Colors */
+:root {
+    --primary: #FB6F92;
+    --secondary: #FD8FAA;
+    --accent: #FEB3C7;
+    --background-light: #FEE5EB;
+    --background-dark: #1a1a1a;
+    --text-light: #333;
+    --text-dark: #fff;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: var(--primary);
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background: var(--secondary);
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: var(--text-light);
+}
+
+/* Search Box */
+.search-box {
+    margin-left: auto;
+    display: flex;
+}
+
+.search-box input {
+    padding: 8px;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-box button {
+    padding: 8px 15px;
+    background: var(--primary);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+    transition: background 0.3s;
+}
+
+.search-box button:hover {
+    background: var(--accent);
+}
+
+/* Collections */
+.collection {
+    padding: 30px;
+    text-align: center;
+}
+
+.collection h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+
+.pics {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pic {
+    width: 200px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.pic:hover {
+    transform: scale(1.05);
+}
+
+/* Background Images */
+.pic-01 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtVveLuWMZWNIaqf3AoiEFViLUib20lN60DQ&s)
+}
+
+.pic-02 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIL2l0jIYJm8CIQUlj9W2iTu5NYJFiKaXMkw&s)
+}
+
+.pic-03 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzq1g1J_rXnBoQxLuwr4DFRhMQYSNGRpX0hw&s');
+}
+
+.pic-04 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4e2U7wm7KSlr-AWQbWAoNuRtVcIWNJEsP-A&s');
+}
+
+.pic-05 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT4X4va5OMcJItnVKekL-GMlU8EObNPPMImg&s');
+}
+
+.pic-06 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8NphOSLFbu-akejJgJM2N8zOAVOmlD688Mg&s');
+}
+
+.pic-07 {background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO7MBQZeVLOP2ZCdPvXDuURzBza2pSJ0xW3w&s);
+}
+
+.pic-08 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlbcXGd0RFDXWVuVpqRoaGyuKSj08bAr7cdQ&s');
+}
+
+.pic-09 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpG6ylfnCv2ddKPxCM-8yHqLFruX2BmTZl7A&s');
+}
+
+.pic-10 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDXmPoKDLlAhnWTLBa4oibJMJBc0p_cSa_1w&s');
+
+}
+.pic-11
+{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS76vChKp4k7yXtGxemzppabteHRRjAj_UijA&s);
+}
+.pic-12{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP8Igryu0Mdn4GRupFgqCnZvtQOmSiYKEr3g&s);
+
+}
+.pic-13{
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJfbTDKIhEZYNvRL-K0mD99ZeAJaJOReYTEQ&s);
+}
+.pic-14{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbFlD4aQzkI0RILOPMya_Dh9txOeKqW72_9Q&s);
+}
+.pic-15{
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-KCiuP-QJwr9T_R5ji8DQTAH9YylJQk4twg&s);
+}
+.pic-16
+{
+    background-image: url(https://alita.pk/cdn/shop/files/IMG_5241_1445x.jpg?v=1721731696);
+}
+.pic-17{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGEORAj-wwvX1su-QYeJifBRjsGYtlkQXo0Q&s);
+}
+.pic-18{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTADV9JHEndwNl4hatIdtgkKxnJitXy9cL6UA&s);
+}
+.pic-19{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTMEBPzlIb66dc-Yb1p4qi4C_F-u2Isrz51A&s);
+}
+
+
+
+
+.footer{
+    background-color: #FB6F92;
+    height: 200px;
+}
+h1{
+    color: white;
+    padding-top: 5px;
+    text-align: center;
+}
+p{
+    color: white;
+    text-align: center;
+    /* width : 70%; */
+    text-align: center;
+}
+.price{
+    color:#FB6F92;
+    margin-top: 270px;
+}
